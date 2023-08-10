@@ -124,7 +124,7 @@ const BookDetails = () => {
                 <h4>Created by: {book.owner.username}</h4>
 
                 {
-                    isOwner() &&  
+                    user && isOwner() &&  
                     <>
                         <Link to={`/edit-book/${book._id}`}><button>Edit Book</button></Link>
                         <button onClick={deleteBook}>Delete Book</button>

@@ -73,10 +73,10 @@ const ActivityDetails = () => {
         {
             activity ?
             
-            <div>
+            <div className="activity">
 
                 <h1>{activity.title} Details</h1>
-                <hr />
+                <br />
 
                 <img id="activity-detail" src={activity.image} alt="activity" />
                 <p><span style={{ fontWeight: "bold" }}>Activity Name:</span> {activity.title}</p>
@@ -87,7 +87,7 @@ const ActivityDetails = () => {
                 <h4>Created by: {activity.owner.username}</h4>
 
                 {
-                    isOwner() &&  
+                    user && isOwner() &&  
                     <>
                         <Link to={`/edit-activity/${activity._id}`}><button>Edit activity</button></Link>
                         <button onClick={deleteActivity}>Delete Activity</button>

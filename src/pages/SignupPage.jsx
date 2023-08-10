@@ -91,7 +91,7 @@ function SignupPage() {
           {errorMessage && <p className="error-message">{errorMessage}</p>}
 
           <p>Already have an account?
-          <Link to="/login"> Login</Link>
+          <Link style={{color: 'red', fontWeight: '900'}} to="/login"> Login</Link>
           </p>
 
         </div>

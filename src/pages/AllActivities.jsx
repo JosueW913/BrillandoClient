@@ -12,23 +12,26 @@ const AllActivities = () => {
 
     }, [])
 
-  return (
-    <div id="all-activities">
+    return (
+        <div className="container">
 
             <h1>All Kids Activities</h1>
 
-        {
-            activities.map((activity) => {
-                return (
+            <div className="activity">
 
-                    <ActPreview key={activity._id} activity={activity} />
+                {
+                    activities.map((activity) => {
+                        return (
 
-                )
-            })
-        }
-        
-    </div>
-  )
+                            <ActPreview key={activity._id} activity={activity} />
+
+                        )
+                    })
+                }
+            </div>
+
+        </div>
+    )
 }
 
 export default AllActivities
