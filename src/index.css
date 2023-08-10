@@ -1,20 +1,269 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+--primary: #f3604b;
+--secondary: #eb2f13;
+--yellow: #ffc132;
+--orange: #f47800;
+--blue: #13e3eb;
+--pale: #fbb170;
+--whiteish: rgb(253, 238, 209);
+--black: black;
+}
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+ul {
+  list-style-type: none;
 }
 
 a {
+  text-decoration: none;
+  color: var(--whiteish);
+}
+
+body {
+  background-color: rgb(253, 238, 209);
+  color: black;
+  line-height: 1.5;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+.navbar {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgb(212, 38, 38);
+}
+
+.navbar img {
+  width: 30vh;
+  transform: rotate(-5deg);
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  align-items: center;
+  line-height: 3;
+}
+
+.nav-item {
+  padding: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 1231px) {
+  .nav-menu {
+    position: fixed;
+    left: -200%;
+    top: 10vh;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--secondary);
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    transition: 0.4s;
+    color: var(--primary);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 1.5rem;
+    font-size: 1.8rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .col1 p {
+    display: none;
+  }
+
+.home .content {
+  position: absolute;
+  display: contents
+}
+
+  /* .col1 h1 {
+    width: 97vw;
+    text-align: center;
+  }
+
+
+
+  .col1 img {
+    padding-top: 3rem;
+    padding-left: -600px;
+    width: 90vw;
+  } */
+
+}
+
+@media screen and (max-width: 1317px) {
+  .col2 img {
+    display: none;
+  }
+
+}
+
+a:hover {
+  color: var(--yellow);
+}
+
+.homeSpan {
+  color: var(--primary);
+  letter-spacing: 0.4rem;
+  text-shadow: 2px 3px 3px var(--yellow);
+}
+
+.col2 {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+
+.col2 img {
+  width: 400px;
+  margin: 1rem 3rem;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+width: 90vw;
+
+}
+
+.home .content {
+  display: grid;
+  grid-template-columns: .8fr auto;
+  align-items: center;
+  justify-items: center;
+  padding: 0;
+}
+
+.col1 {
+  padding: 1rem 1rem 1rem 0;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.col1 img {
+  width: 800px;
+  margin: -200px 0 -150px;
+  transform: rotate(-5deg);
+}
+
+.col1 h1 {
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+.col1 p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.form-layout {
+  width: 500px;
+  height: 450px;
+  margin: auto;
+  margin-top: 4rem;
+  padding-top: 1rem;
+  background-color: var(--pale);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.form-container {
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container p {
+  font-weight: bold;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form > input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-top: 1rem;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+}
+button:hover {
+  color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+#btnLogout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav > button {
+  display: flex;
+}
+
+
+
+/* a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
@@ -66,4 +315,105 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+/* src/index.css */
+ 
+/* body {
+  margin: 0;
 }
+ 
+a {
+  list-style: none;
+  color: black;
+}
+ 
+button,
+select {
+  padding: 5px 10px;
+  min-width: 50px;
+  margin: 5px;
+  font-size: 18px;
+}
+ 
+label {
+  width: 200px;
+  display: block;
+}
+ 
+input,
+textarea {
+  width: 200px;
+  padding: 10px;
+  display: inline-block;
+  margin: 10px;
+}
+ 
+ 
+.card {
+  width: 400px;
+  padding: 10px;
+  box-shadow: 0px 2px 3px grey;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background: #94a7c8;
+  border-radius: 4px;
+}
+ 
+.ProjectCard h3::after {
+  content: url("https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/icon-expand.png");
+  margin-left: 5px;
+}
+ 
+.EditProjectPage,
+.AddProject,
+.AddTask,
+.SignupPage,
+.LoginPage {
+  background: #f9eec3;
+  border: 1px solid grey;
+  box-shadow: 0px 2px 3px grey;
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 4px;
+}
+ 
+.EditProjectPage {
+  background-color: rgb(239, 196, 88);
+}
+ 
+.SignupPage,
+.LoginPage {
+  background-color: #608dd5;
+}
+ 
+.LoginPage {
+  background-color: #94a7c8;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40vw;
+}
+
+#add-activity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#add-book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#preview {
+  height: 8vh;
+} */
