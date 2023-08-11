@@ -14,6 +14,7 @@ import BookDetails from "./pages/BookDetails";
 import AddBook from "./pages/AddBook";
 import EditBook from "./pages/EditBook";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 
  
@@ -33,7 +34,7 @@ function App() {
 
   return (
     <div className="App">
-      
+      <div className="main-content">
       <Navbar />
  
       <Routes>      
@@ -63,6 +64,11 @@ function App() {
         </Route>
 
       </Routes>
+      </div>
+
+      <footer className="foot" >
+      <Footer />
+      </footer>
       
     </div>
   );

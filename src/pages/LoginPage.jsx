@@ -41,7 +41,7 @@ function LoginPage() {
   
   return (
 
-    <div className="SignupPage">
+    <div className="SignupPage sign-up">
       <div className="form-layout">
         <div className="form-container">
       <h1>Login</h1>

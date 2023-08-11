@@ -4,6 +4,15 @@
   padding: 0;
 }
 
+/* .app {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+} */
 
 
 :root {
@@ -54,6 +63,7 @@ body {
   font-family: 'Roboto', sans-serif;
   align-items: center;
   line-height: 3;
+  z-index: 998;
 }
 
 .nav-item {
@@ -66,6 +76,8 @@ body {
   display: none;
   z-index: 999;
 }
+
+
 
 
 a:hover {
@@ -122,6 +134,7 @@ width: 97vw;
   width: 800px;
   margin: -200px 0 -150px;
   transform: rotate(-5deg);
+  
 }
 
 .col1 h1 {
@@ -220,6 +233,36 @@ nav > button {
   border-radius: 4px;
 }
 
+.sign-up {
+  min-height: calc(83vh - 275px);
+}
+
+.foot {
+  position:relative;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+.footer {
+  padding: 4rem 6rem;
+  background-color: var(--secondary);
+  font-weight: bold;
+  /* position: relative; */
+  left: 0;
+  bottom: 0;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer img {
+  width: 200px;
+}
+
 @media screen and (max-width:940px) {
   .nav-menu {
     position: fixed;
@@ -233,6 +276,7 @@ nav > button {
     text-align: center;
     transition: 0.4s;
     color: var(--primary);
+    z-index: 998;
   }
 
   .nav-menu.active {
@@ -265,6 +309,7 @@ nav > button {
   .col1 img {
     padding-top: 3rem;
     margin-left: -2rem;
+    z-index: 0;
   }
 
   .home {
