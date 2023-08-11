@@ -231,6 +231,7 @@ nav > button {
   margin-top: 2rem;
   background: var(--pale);
   border-radius: 4px;
+  color: black;
 }
 
 .sign-up {

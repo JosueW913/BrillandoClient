@@ -17,7 +17,7 @@ const AllActivities = () => {
 
             <h1>All Kids Activities</h1>
 
-            <div className="activity">
+            <div className="details">
 
                 {
                     activities.map((activity) => {

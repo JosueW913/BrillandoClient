@@ -73,7 +73,7 @@ const ActivityDetails = () => {
         {
             activity ?
             
-            <div className="details sign-up">
+            <div className="container details sign-up">
 
                 <h1>{activity.title} Details</h1>
                 <br />

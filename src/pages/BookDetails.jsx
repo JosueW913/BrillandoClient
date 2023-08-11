@@ -115,9 +115,10 @@ const BookDetails = () => {
                     </>
                 } */}
 
+                <h1>{book.title} Details</h1>
+                <br />
+
                 <img id="book-detail" src={book.image} alt="book" />
-                <h2> {book.title}</h2>
-                <hr />
                 <p><span style={{ fontWeight: "bold" }}>Age Level:</span> {book.ageLevel}</p>
                 <p><span style={{ fontWeight: "bold" }}>Subject:</span> {book.subject}</p>
                 <p><span style={{ fontWeight: "bold" }}>Description: </span> {book.description}</p>

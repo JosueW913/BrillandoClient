@@ -14,7 +14,7 @@ const AllBooks = () => {
     }, [])
 
   return (
-    <div id="all-books"> 
+    <div id="all-books details"> 
         <h1>Brillando Books</h1>
 
         {
