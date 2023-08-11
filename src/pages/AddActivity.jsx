@@ -67,7 +67,7 @@ const AddActivity = () => {
     // }
 
     return (
-        <div className="forms">
+        <div className="forms sign-up">
             <div className="form-layout">
                 <div className="form-container">
                     <h1>Add a Kids Activities</h1>

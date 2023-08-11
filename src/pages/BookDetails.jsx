@@ -101,7 +101,7 @@ const BookDetails = () => {
 
 
   return (
-    <div>
+    <div className="container sign-up details">
         <h1>Book Details</h1>
 
         {

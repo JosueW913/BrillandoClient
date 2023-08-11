@@ -69,7 +69,9 @@ const EditBook = () => {
     }, [])
 
   return (
-    <div>
+    <div className="forms sign-up">
+    <div className="form-layout">
+      <div className="form-container">
        <h1>Edit Book Post</h1>
 
        {book ? 
@@ -99,6 +101,8 @@ const EditBook = () => {
        
        }
 
+    </div>
+    </div>
     </div>
   )
 }
