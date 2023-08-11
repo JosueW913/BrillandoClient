@@ -50,6 +50,7 @@ body {
   align-items: center;
   padding: 1rem;
   background-color: rgb(212, 38, 38);
+  box-shadow: 0 0 10px;
 }
 
 .navbar img {
@@ -243,15 +244,17 @@ nav > button {
   width: 100%;
   left: 0;
   bottom: 0;
+  box-shadow: 0 0 10px;
 }
 
 .footer {
   padding: 4rem 6rem;
   background-color: var(--secondary);
   font-weight: bold;
-  /* position: relative; */
+  position: relative;
   left: 0;
   bottom: 0;
+  
 }
 
 .top {
