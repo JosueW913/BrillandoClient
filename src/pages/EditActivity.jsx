@@ -69,7 +69,9 @@ const EditActivity = () => {
     }, [])
 
   return (
-    <div>
+    <div className="forms sign-up">
+    <div className="form-layout">
+      <div className="form-container">
        <h1>Edit Activity</h1>
 
        {activity ? 
@@ -102,6 +104,8 @@ const EditActivity = () => {
        
        }
 
+    </div>
+    </div>
     </div>
   )
 }

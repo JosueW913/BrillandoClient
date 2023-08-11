@@ -229,7 +229,7 @@ nav > button {
   margin: 0 auto;
   margin-bottom: 20px;
   margin-top: 2rem;
-  background: #94a7c8;
+  background: var(--pale);
   border-radius: 4px;
 }
 
@@ -295,6 +295,7 @@ nav > button {
 
   .col1 {
     max-width: 100%;
+    min-height: calc(100vh - 275px)
   }
 
   .col1 p {
@@ -318,6 +319,17 @@ nav > button {
   }
   
   .col2 img {
+    display: none;
+  }
+
+  .foot {
+    position:relative;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+  }
+
+  .footer img {
     display: none;
   }
 
