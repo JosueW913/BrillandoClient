@@ -19,6 +19,8 @@ const AddBook = () => {
         description: ""
     })
 
+    const [buttonDisabled, setButtonDisabled] = useState(false)
+
     const navigate = useNavigate()
 
     const handleSubmit = (e) => {
@@ -83,7 +85,7 @@ const AddBook = () => {
                         <label>Description:</label>
                         <input type="text" name="description" value={book.description} onChange={handleTextChange} />
 
-                        <button type="submit">Submit Book</button>
+                        <button type="submit" disabled={buttonDisabled} >Submit Book</button>
 
                     </form>
                 </div>
