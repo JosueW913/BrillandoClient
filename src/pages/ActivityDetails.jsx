@@ -75,10 +75,10 @@ const ActivityDetails = () => {
             
             <div className="container details sign-up">
 
-                <h1>{activity.title} Details</h1>
-                <br />
 
                 <img id="activity-detail" src={activity.image} alt="activity" />
+                <h1>{activity.title} Details</h1>
+                <hr />
                 <p><span style={{ fontWeight: "bold" }}>Activity Name:</span> {activity.title}</p>
                 <p><span style={{ fontWeight: "bold" }}>Age Level:</span> {activity.ageLevel}</p>
                 <p><span style={{ fontWeight: "bold" }}>Subject:</span> {activity.subject}</p>

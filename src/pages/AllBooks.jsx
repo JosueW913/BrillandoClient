@@ -13,21 +13,23 @@ const AllBooks = () => {
 
     }, [])
 
-  return (
-    <div id="all-books details"> 
-        <h1>Brillando Books</h1>
+    return (
+        <div className="container">
+            <h1>Brillando Books</h1>
 
-        {
-            books.map((book) => {
-                return (
+            <div className="details">
+                {
+                    books.map((book) => {
+                        return (
 
-                    <BookPreview key={book._id} book={book} />
+                            <BookPreview key={book._id} book={book} />
 
-                )
-            })
-        }
-    </div>
-  )
+                        )
+                    })
+                }
+            </div>
+        </div>
+    )
 }
 
 export default AllBooks
